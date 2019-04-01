@@ -63,10 +63,6 @@ class History extends Component {
   render() {
     const { entries } = this.props;
     const { ready } = this.state;
-
-    if (ready) {
-      return <AppLoading />;
-    }
     return (
       <UdaciFitnessCalendar
         items={entries}
